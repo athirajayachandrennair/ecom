@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '%eo99wu+#56%0-jbv)27sq2^8gh7%9dchd=!!!c-s*&eg9o8od'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ecomapp.onrender.com']
 
 
 # Application definition
