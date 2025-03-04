@@ -21,12 +21,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '%eo99wu+#56%0-jbv)27sq2^8gh7%9dchd=!!!c-s*&eg9o8od'
+SECRET_KEY = '6m8iGESzO2Y7F-WX0OytpGUoeWyy1lchqKEzZ6mrIs4Ok6JE405jupUadjQ1kAS7bpY'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['ecom.onrender.com", "localhost","127.0.0.1']
+ALLOWED_HOSTS = ['classpro.onrender.com", "127.0.0.1", "localhost']
 
 
 # Application definition
