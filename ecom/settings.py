@@ -26,7 +26,7 @@ SECRET_KEY = '6m8iGESzO2Y7F-WX0OytpGUoeWyy1lchqKEzZ6mrIs4Ok6JE405jupUadjQ1kAS7bp
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['classpro.onrender.com", "127.0.0.1", "localhost']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
