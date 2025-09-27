@@ -26,7 +26,7 @@ SECRET_KEY = '6m8iGESzO2Y7F-WX0OytpGUoeWyy1lchqKEzZ6mrIs4Ok6JE405jupUadjQ1kAS7bp
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['.railway.app']
 
 
 # Application definition
@@ -158,3 +158,11 @@ CLOUDINARY_STORAGE = {
 }
 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
+
+
+import os
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://*.railway.app',
+]
