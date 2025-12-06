@@ -26,7 +26,12 @@ SECRET_KEY = '6m8iGESzO2Y7F-WX0OytpGUoeWyy1lchqKEzZ6mrIs4Ok6JE405jupUadjQ1kAS7bp
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.railway.app']
+render_host = os.environ.get("RENDER_EXTERNAL_HOSTNAME")
+
+ALLOWED_HOSTS = ["localhost"]
+
+if render_host:
+    ALLOWED_HOSTS.append(render_host)
 
 
 # Application definition
@@ -147,17 +152,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media/")
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-import cloudinary
-import cloudinary.uploader
-import cloudinary.api
 
-CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': os.getenv('dfdsbc9uk'),
-    'API_KEY': os.getenv('319884712977414'),
-    'API_SECRET': os.getenv('lv-J2CNNkaC-vQpq4EwkdlwEiGs'),
-}
-
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 
 
